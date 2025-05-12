@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Thoughts | VERBAL</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand" id="nav-toggle">
+            <span class="glowing-text">VERBAL</span>
+        </div>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./thoughts.html" class="secret-link">Share Thoughts</a>
+            <a href="#" id="theme-toggle" class="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="thoughts-content">
+        <section class="thoughts-hero">
+            <h1>SHARE YOUR<br>THOUGHTS</h1>
+            <p class="subtitle">A safe space for your ideas, scribbles, and reflections</p>
+        </section>
+
+        <section class="thoughts-form">
+            <h2>Type Your Thoughts</h2>
+            <form id="anonymous-thoughts-form">
+                <textarea placeholder="Type your thoughts here..." maxlength="500" required></textarea>
+                <div class="form-info">
+                    <span id="char-counter">0/500</span>
+                </div>
+                <button type="submit">Encrypt & Submit</button>
+            </form>
+        </section>
+
+        <hr class="section-divider">
+
+        <section class="whiteboard-section">
+            <h2>Scribble Your Thoughts</h2>
+            <canvas id="whiteboard" width="800" height="400"></canvas>
+            <div class="whiteboard-tools">
+                <input type="color" id="color-picker" title="Pick a color">
+                <input type="range" id="brush-size" min="1" max="10" value="2" title="Brush size">
+                <button id="fullscreen-whiteboard">Fullscreen</button>
+                <button id="clear-whiteboard">Clear Whiteboard</button>
+            </div>
+        </section>
+
+        <div class="landscape-prompt">
+            <p>Please rotate your device to landscape mode for the best experience.</p>
+        </div>
+
+        <hr class="section-divider">
+
+        <section class="security-info">
+            <h2>Why is this space secure?</h2>
+            <p>Your thoughts are encrypted before submission, ensuring privacy and confidentiality. No data is stored permanently.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/_bujuwayne_" target="_blank">INSTAGRAM</a>
+                <a href="https://twitter.com/WayneWo75664602" target="_blank">X</a>
+                <a href="mailto:wnjeru45@gmail.com.com">CONTACT</a>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2025 VERBAL JOURNAL. ALL LANGUAGE RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
